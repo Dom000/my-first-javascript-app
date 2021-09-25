@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <style>
+        .papa{
+            margin: auto;
+            max-width: max-content;
+        }
+        .papa2{
+            margin: auto;
+            /* max-width: max-content; */
+            width: 600px;
+            /* height: 400px; */
+            background-color: burlywood;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        input{
+            padding: 10px;
+            width: 30vw;
+            border-radius: 5px;
+            background-color: rgb(238, 216, 188);
+            border: none;
+        }
+        button{
+            padding: 10px;
+        }
+        ol{
+           padding-left: 18%;
+
+        }
+        li{
+            margin: 15px;
+        }
+        .btt1{
+            margin: 3px;
+            border-radius: 5px;
+            padding: 3px;
+            position: absolute;
+            left: 64.6vw;
+            border: none;
+            background-color: crimson;
+        }
+        .btt2{
+            margin: 3px;
+            border-radius: 5px;
+            padding: 3px;
+            position: absolute;
+            left: 60vw;
+            border: none;
+            background-color: crimson;
+        }
+        .ck{
+            position: absolute;
+            left: 44vw; 
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="papa">
+        <input type="text" class="inpt">
+        <button class="btn">Enter</button>
+    </div> -->
+    <div class="papa2">
+        <div class="papa">
+            <input type="text" class="inpt">
+            <button class="btn">Enter</button>
+        </div>
+        <ol class="orderList">
+
+        </ol>
+    </div>
+    <script>
+        let inpt=document.querySelector('.inpt');
+        let btn=document.querySelector('.btn');
+        let orderList=document.querySelector('.orderList')
+        // adding function to my btn
+        btn.addEventListener('click',function(){
+            inpt.value;
+            if(inpt.value){
+                inpt.value;
+            }else{
+                return;
+            }
+            // inpt.value='';
+            
+            let list=document.createElement('li');
+            let spn=document.createElement('span');
+            spn.textContent=inpt.value;
+            let btn1 = document.createElement('button');
+            btn1.textContent='edith'
+            btn1.setAttribute('class','btt1')
+            let btn2 = document.createElement('button');
+            btn2.textContent='Delete'
+            btn2.setAttribute('class','btt2')
+            let chk=document.createElement('input');
+            chk.setAttribute('type','checkbox');
+            chk.setAttribute('class','ck')
+            chk.style.position
+            li=inpt.value;
+            orderList.appendChild(list);
+               
+                list.appendChild(spn);
+                list.appendChild(chk);
+                list.appendChild(btn1);
+                list.appendChild(btn2);
+            inpt.value='';
+
+
+             //    adding functions to my buttons
+
+            btn1.addEventListener('click',function(){
+                let update;
+                update=prompt('Edith your ToDo',spn.textContent);
+                if(update){
+                    update;
+                }else{
+                    return;
+                }
+                spn.textContent=update;
+            })
+            // button2 function
+            btn2.addEventListener('click',function(){
+                let confirmtn;
+                confirmtn=confirm('are you sure?');
+                if(confirmtn){
+                    orderList.removeChild(list);
+                }
+            })
+            console.log(inpt.value)
+        });
+
+   
+
+    </script>
+</body>
+</html>
