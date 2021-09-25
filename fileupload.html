@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>file-upload</title>
+   <style>
+        .photo{
+        width: 100px;
+        height: 100px;
+    }
+   </style>
+</head>
+<body>
+    <form action="">
+        <input type="file" >
+         <!-- <img id="photo" > -->
+         <div id="hdd">
+           
+         </div>
+         <button>enter</button>
+    </form>
+    <div id="imgholder">
+        <!-- <h6 id="txt"></h6> -->
+        <!-- <img src="" alt=""> -->
+    </div>
+    <script>
+        // setting the file reader
+        let cver=document.querySelector('#hdd')
+        let inp=document.querySelector('input');
+        let reader=new FileReader();
+        let pic1=document.createElement('img');
+        let array=[];
+        // console.log(inp.value)
+        inp.addEventListener('change',(e)=>{
+        // let reader=new FileReader();
+        reader.addEventListener('load',()=>{
+          
+            pic1.setAttribute('src',reader.result);
+            pic1.setAttribute('class','photo')
+            cver.appendChild(pic1);
+           
+        });
+        reader.readAsDataURL(e.target.files[0]);
+        })
+
+        // getting the img src code
+        document.querySelector('button').addEventListener('click',Run);
+     function Run(e){
+         e.preventDefault();
+         let dataURL =document.querySelector('img').src;
+        //  let array=[];
+        //  document.querySelector('#txt').innerHTML=dataURL;
+        // let newimg=document.createElement('img');
+        // newimg.setAttribute('src',dataURL);
+        array.push({name:`${dataURL}`,age:'300'},);
+        // document.querySelector('#imgholder').appendChild(array);
+        
+        cver.removeChild(pic1);
+
+        // cver.removeChild(img);
+        // console.log(array)
+     };
+     
+    </script>
+</body>
+</html>
