@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(10, 1, 19);
+        }
+        .white{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 18px 30px 30px;
+            /* border-top: black solid 1px; */
+            
+        }
+       
+        .black{
+            height: 350px;
+            width: 300px;
+            background-color: rgb(10, 10, 10);
+            border-radius: 50%;
+            /* box-shadow: white 5px 15px 15px 20px; */
+            border-bottom: rgb(0, 0, 0) solid 1px;
+            position: absolute;
+            top: 1%;
+            animation: rotating 60s linear infinite;
+        }
+        @keyframes rotatin{
+                from{
+                    transform:rotate(0deg)
+            }
+                to{
+                    transform:rotate(360deg)
+            }
+        }
+        .star1{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 60%;
+            top: 25%;
+        }
+        .star2{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 30%;
+            top: 20%;
+        }
+        .star3{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 20%;
+            bottom: 10%;
+        }
+        .star4{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 30%;
+
+        }
+        .star5{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 60%;
+        }
+        .star6{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            right: 10%;
+            bottom: 3%;
+        }
+        .star7{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 10%;
+            top: 80%;
+        }
+        .star8{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 90%;
+            bottom: 50%;
+        }
+        .star9{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 20%;
+            bottom: 5%;
+        }
+        .star10{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            right: 6%;
+            top: 10%;
+        }
+        .star11{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 60%;
+            bottom: 30%;
+        }
+        .star12{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 80%;
+            bottom:45%;
+        }
+        .star13{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 10%;
+            bottom: 2%;
+        }
+        .star14{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 60%;
+        }
+        .star15{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 80%;
+        }
+        .star16{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 100%;
+        }
+        .star17{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 60%;
+            top: 100%;
+        }
+        .star18{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 60%;
+        }
+        .star19{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 40%;
+            bottom: 30%;
+        }
+        .star20{
+            height: 3px;
+            width: 3px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: white 2px 1px 8px 1px;
+            position: absolute;
+            left: 60%;
+        }
+        #my-text, #my-text2, #my-text3, #my-text4, #my-text5, #my-text6, #my-text7, #my-text8, #my-text9{
+            color: rgb(255, 255, 255);
+            margin: 1px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 25px;
+        }
+        .papa{
+            display: flex;
+            margin: auto;
+            width: max-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="star1"></div>
+    <div class="star2"></div>
+    <div class="star3"></div>
+    <div class="star4"></div>
+    <div class="star5"></div>
+    <div class="star6"></div>
+    <div class="star7"></div>
+    <div class="star8"></div>
+    <div class="star9"></div>
+    <div class="star10"></div>
+    <div class="star11"></div>
+    <div class="star12"></div>
+    <div class="star13"></div>
+    <div class="star14"></div>
+    <div class="star15"></div>
+    <div class="star16"></div>
+    <div class="star17"></div>
+    <div class="star18"></div>
+    <div class="star19"></div>
+    <div class="star20"></div>
+    <div class="papa">
+        <h3 id="my-text"></h3>
+        <h3 id="my-text2"></h3>
+        <h3 id="my-text3"></h3>
+        <h3 id="my-text4"></h3>
+        <h3 id="my-text5"></h3>
+        &nbsp; &nbsp; &nbsp;
+        <h3 id="my-text6"></h3>
+        <h3 id="my-text7"></h3>
+        <h3 id="my-text8"></h3>
+        <h3 id="my-text9"></h3>
+    </div>
+
+
+    <script>
+        
+        let message='H'
+        let newMessage=message.split('');
+        console.log(newMessage)
+       
+      let x= setInterval(() => {
+        for(let i=0;i<newMessage.length;i++){
+            
+            // let show=document.getElementById('my-text')
+            console.log(newMessage[i]=document.getElementById('my-text').innerHTML=newMessage[i])
+            document.getElementById('my-text').innerText=newMessage[i];
+        }
+       
+            clearInterval(x)
+        
+       }, 150);
+
+// line two
+       let message2='e'
+        let newMessage2=message2.split('');
+        console.log(newMessage2)
+       
+      let t= setInterval(() => {
+        for(let i=0;i<newMessage2.length;i++){
+            
+            // let show=document.getElementById('my-text')
+            console.log(newMessage2[i]=document.getElementById('my-text2').innerHTML=newMessage2[i])
+            document.getElementById('my-text2').innerText=newMessage2[i];
+        }
+       
+            clearInterval(t)
+        
+       }, 300);
+// line three
+
+       let message3='l'
+        let newMessage3=message3.split('');
+        console.log(newMessage3)
+       
+      let e= setInterval(() => {
+        for(let i=0;i<newMessage3.length;i++){
+            
+            // let show=document.getElementById('my-text')
+            console.log(newMessage3[i]=document.getElementById('my-text3').innerHTML=newMessage3[i])
+            document.getElementById('my-text3').innerText=newMessage3[i];
+        }
+       
+            clearInterval(e)
+        
+       }, 450);
+
+// line4
+       let message4='l'
+        let newMessage4=message4.split('');
+        console.log(newMessage4)
+       
+      let l= setInterval(() => {
+        for(let i=0;i<newMessage4.length;i++){
+            
+            // let show=document.getElementById('my-text')
+            console.log(newMessage4[i]=document.getElementById('my-text4').innerHTML=newMessage4[i])
+            document.getElementById('my-text4').innerText=newMessage4[i];
+        }
+       
+            clearInterval(l)
+        
+       }, 600);
+
+    //    line 5
+       let message5='o'
+        let newMessage5=message5.split('');
+        console.log(newMessage5)
+       
+      let p= setInterval(() => {
+        for(let i=0;i<newMessage5.length;i++){
+            
+            // let show=document.getElementById('my-text')
+            console.log(newMessage5[i]=document.getElementById('my-text5').innerHTML=newMessage5[i])
+            document.getElementById('my-text5').innerText=newMessage5[i];
+        }
+       
+            clearInterval(p)
+        
+       }, 750);
+
+
+    //    line 6
+    let message6='D'
+        let newMessage6=message6.split('');
+        console.log(newMessage6)
+       
+      let z= setInterval(() => {
+        for(let i=0;i<newMessage6.length;i++){
+            
+            // let show=document.getElementById('my-text')
+            console.log(newMessage6[i]=document.getElementById('my-text6').innerHTML=newMessage6[i])
+            document.getElementById('my-text6').innerText=newMessage6[i];
+        }
+       
+            clearInterval(z)
+        
+       }, 900);
+
+    //    line 7
+    let message7='e'
+        let newMessage7=message7.split('');
+        console.log(newMessage7)
+       
+      let zt= setInterval(() => {
+        for(let i=0;i<newMessage7.length;i++){
+            
+            // let show=document.getElementById('my-text')
+            console.log(newMessage7[i]=document.getElementById('my-text7').innerHTML=newMessage7[i])
+            document.getElementById('my-text7').innerText=newMessage7[i];
+        }
+       
+            clearInterval(zt)
+        
+       }, 1050);
+    //    line 8
+    let message8='a'
+        let newMessage8=message8.split('');
+        console.log(newMessage8)
+       
+      let zo= setInterval(() => {
+        for(let i=0;i<newMessage8.length;i++){
+            
+            // let show=document.getElementById('my-text')
+            console.log(newMessage8[i]=document.getElementById('my-text8').innerHTML=newMessage8[i])
+            document.getElementById('my-text8').innerText=newMessage8[i];
+        }
+       
+            clearInterval(zo)
+        
+       }, 1200);
+    //    line 9
+    let message9='r'
+        let newMessage9=message9.split('');
+        console.log(newMessage9)
+       
+      let zoj= setInterval(() => {
+        for(let i=0;i<newMessage9.length;i++){
+            
+            // let show=document.getElementById('my-text')
+            // console.log(newMessage9[i]=document.getElementById('my-text9').innerHTML=newMessage9[i])
+            document.getElementById('my-text9').innerText=newMessage9[i] + '!';
+        }
+       
+            clearInterval(zoj)
+        
+       }, 1350);
+    </script>
+</body>
+</html>
